@@ -17,7 +17,11 @@ body{
     display: flex;
     overflow: hidden;
     flex-direction: column;
-    background: var(--main-color);
+    background-image: url("./../images/bg-mobile.svg");
+    background-color: var(--main-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vw;
     padding: 7vw;
 }
 
@@ -73,5 +77,17 @@ body{
 
 a{
     text-decoration: none;
+    font-family: var(--body-font);
+    font-weight: var(--weight-light);
     color: var(--main-color);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
