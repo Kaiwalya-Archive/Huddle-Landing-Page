@@ -18,22 +18,46 @@ body{
     overflow: hidden;
     flex-direction: column;
     background: var(--main-color);
+    padding: 7vw;
 }
 
 .container{
     display: flex;
     flex-direction: column;
-    padding: 5vw;
+    align-items: center;
+}
+
+.logo{
+    height: 2vh;
+    margin-bottom:5.5rem;
 }
 
 #logo{
-    padding: 5vw;
-    height: 10vw;
-    width: 3vw;
+    height:10vw;
 }
 
 #mockup{
     height: 60vw;
     width:80vw;
+    margin-bottom:3rem;
+}
+
+.messageContainer{
+    text-align: center;
+}
+.headTitle{
+    font-family: var(--heading-font);
+    color: #fff;
+    font-size:6.5vw;
+    font-weight: var(--weight-heavy);
+}
+.infoPara{
+    color: rgb(240, 238, 238);
+    font-family: var(--body-font);
+    font-size: 4.5vw;
+    font-weight: var(--weight-light);
+    line-height: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
