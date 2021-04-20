@@ -6,7 +6,7 @@
     --weight-heavy:600;
 
     --main-color:hsl(257, 40%, 49%);
-    --off-color:hsl(300, 69%, 71%);
+    --active-color:hsl(300, 69%, 71%);
 }
 
 *, *::before, *::after {
@@ -75,6 +75,11 @@ body{
     box-shadow:2px 2px 10px; 
 }
 
+.button:hover{
+    background-color:var(--active-color);
+    color: var(--active-color);
+}
+
 a{
     text-decoration: none;
     font-family: var(--body-font);
@@ -90,4 +95,8 @@ footer{
     padding-top: 4rem;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+i:hover{
+    color:var(--active-color);
 }
