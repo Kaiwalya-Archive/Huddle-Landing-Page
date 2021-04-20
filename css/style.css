@@ -6,7 +6,7 @@
     --weight-heavy:600;
 
     --main-color:hsl(257, 40%, 49%);
-    --off-color:hsl(300, 69%, 71%);
+    --active-color:hsl(300, 69%, 71%);
 }
 
 *, *::before, *::after {
@@ -17,7 +17,11 @@ body{
     display: flex;
     overflow: hidden;
     flex-direction: column;
-    background: var(--main-color);
+    background-image: url("./../images/bg-mobile.svg");
+    background-color: var(--main-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vw;
     padding: 7vw;
 }
 
@@ -33,12 +37,15 @@ body{
 }
 
 #logo{
-    height:10vw;
+    max-height:8vw;
 }
 
 #mockup{
-    height: 60vw;
-    width:80vw;
+    min-height: 45vw;
+    min-width: 75vw;
+    max-height: 20vw;
+    max-width: 50vw;
+    /* width:80vw; */
     margin-bottom:3rem;
 }
 
@@ -54,10 +61,45 @@ body{
 .infoPara{
     color: rgb(240, 238, 238);
     font-family: var(--body-font);
-    font-size: 4.5vw;
+    font-size:1rem;
     font-weight: var(--weight-light);
-    line-height: 1.5rem;
+    line-height:3vh;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 
+.button{
+    background-color: #fff;
+    padding-top:3.33vw;
+    padding-bottom:3.33vw;
+    padding-left:20vw;
+    padding-right:20vw;
+    border-radius: 50em;
+    box-shadow:2px 2px 10px; 
+}
+
+.button:hover{
+    background-color:var(--active-color);
+    color: var(--active-color);
+}
+
+a{
+    text-decoration: none;
+    font-family: var(--body-font);
+    font-weight: var(--weight-light);
+    color: var(--main-color);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+i:hover{
+    color:var(--active-color);
+}
