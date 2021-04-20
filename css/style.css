@@ -1,0 +1,39 @@
+:root{
+    --heading-font:'Poppins',sans-serif;
+    --body-font:'Open Sans',sans-serif;
+
+    --weight-light:400;
+    --weight-heavy:600;
+
+    --main-color:hsl(257, 40%, 49%);
+    --off-color:hsl(300, 69%, 71%);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background: var(--main-color);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 5vw;
+}
+
+#logo{
+    padding: 5vw;
+    height: 10vw;
+    width: 3vw;
+}
+
+#mockup{
+    height: 60vw;
+    width:80vw;
+}
+
