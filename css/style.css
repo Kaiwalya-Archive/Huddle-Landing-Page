@@ -37,12 +37,15 @@ body{
 }
 
 #logo{
-    height:10vw;
+    max-height:8vw;
 }
 
 #mockup{
-    height: 60vw;
-    width:80vw;
+    min-height: 45vw;
+    min-width: 75vw;
+    max-height: 20vw;
+    max-width: 50vw;
+    /* width:80vw; */
     margin-bottom:3rem;
 }
 
@@ -58,11 +61,11 @@ body{
 .infoPara{
     color: rgb(240, 238, 238);
     font-family: var(--body-font);
-    font-size: 4.5vw;
+    font-size:1rem;
     font-weight: var(--weight-light);
-    line-height: 1.5rem;
+    line-height:3vh;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 .button{
