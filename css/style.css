@@ -115,7 +115,7 @@ i:hover{
         background-color: var(--main-color);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vw;
+        height: 100vh;
         padding-top: 4vw;
         padding-right: 0px;
         padding-left: 7vw;
@@ -139,7 +139,6 @@ i:hover{
     #mockup{
         min-height: 38vw;
         min-width: 9vw;
-        margin-bottom:2.5rem;
     }
 
     .messageContainer{
@@ -189,13 +188,17 @@ i:hover{
     footer{
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: flex-end;
         color: #fff;
         padding-top: 3rem;
         padding-left: 2rem;
-        padding-right: 2rem;
+        padding-right: 4.5vw;
     }
 
+    .fab{
+        position: relative;
+        padding-left: 2vw;
+    }
     i:hover{
         color:var(--active-color);
     }
